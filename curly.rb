@@ -4,7 +4,9 @@ require 'json'
 argString = ''
 
 ARGV.each do |a|
-	if a.match /^-/
+	if a == '--json'
+		argString += ' -H "Content-Type: application/json"'
+	elsif a.match /^-/
 		argString += " #{a}"
 	else
 		argString += " \"#{a}\""
