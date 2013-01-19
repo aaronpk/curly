@@ -3,6 +3,15 @@ curly
 
 curly: A replacement for `curl` which pretty-prints JSON output
 
+Installation
+------------
+
+```
+gem install curly
+```
+
+Then you'll have a new command available, `curly` which can be used in place of `curl`.
+
 
 Usage
 -----
@@ -59,19 +68,3 @@ Content-Length: 786
   "talking_about_count": 20095
 }
 ```
-
-Install
--------
-
-The easiest way to use curly is to create a bash alias from `curly` to this script. After cloning this repository, add a line like the following to your bash profile.
-
-`alias curly="/Users/aaronpk/Code/curly/curly.rb"`
-
-Then you'll need to reload your bash profile:
-
-`. ~/.bash_profile`
-
-This script also requires the 'json' gem, which you can easily install by running
-
-`gem install json`
-
