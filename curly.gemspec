@@ -10,6 +10,6 @@ Gem::Specification.new do |gem|
   gem.files = `git ls-files | grep -v myapp`.split("\n")
   gem.name = "curly"
   gem.require_paths = ["lib"]
-  gem.version = '0.0.1'
+  gem.version = '0.1.0'
   gem.add_dependency 'json'
 end
